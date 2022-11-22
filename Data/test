@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# crawling_category(searches, category_id, month, nation_id)
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 9, 3)'
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 8, 3)'
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 7, 3)'
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 6, 3)'
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 5, 3)'
+python3 -c 'import autocrawling; autocrawling.crawling_category(["korea drama", "ddd","pemain korea", "penyanyi korea", "ㅈㄷㄹㅈㄷㄹ", "ㄹㄷㄹㄷㄹ"], [3,2,43,44], 4, 3)'
+
+exit 0

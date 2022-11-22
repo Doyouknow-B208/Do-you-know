@@ -1,0 +1,56 @@
+server:
+  port: 8080
+  error:
+    whitelabel:
+      enabled: false
+
+  servlet:
+    context-path: /api
+
+spring:
+  # TODO : PUSH 하기 전에 다시 한번 확인할 것.
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://43.201.37.208:3306/DoYouKnow?serverTimezone=UTC&characterEncoding=UTF-8
+#    url: jdbc:mysql://43.201.37.208:3306/DoYouKnow?serve1rTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: b208
+    password: b208root
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    open-in-view: false
+    hibernate:
+      format_sql: true
+      ddl-auto: update
+      show-sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
+
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAW547JXMVEONK7UUQ
+      secretKey: 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
+    s3:
+      bucket: dyk
+      path: https://dyk.s3.ap-northeast-2.amazonaws.com/
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
