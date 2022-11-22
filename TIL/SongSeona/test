@@ -1,0 +1,4 @@
+#!/bin/bash
+
+python3 -c 'import test; test.cawrling("Olahraga Korea", 8, 1, 5)'
+exit 0
